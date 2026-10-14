@@ -1,101 +1,92 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f1eee7">
-  <meta name="description" content="Monohaus — a bold editorial portfolio for a multidisciplinary creative.">
-  <title>Monohaus — Creative Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b1020" />
+  <meta name="description" content="NovaFolio — a modern personal portfolio showcasing projects, skills, and ways to get in touch." />
+  <title>NovaFolio — Personal Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="announcement"><span>INDEPENDENT CREATIVE / AVAILABLE FOR SELECT PROJECTS</span><span class="announce-right">EST. 2026 <i>✳</i> WORLDWIDE</span></div>
-  <header class="header">
-    <a class="wordmark" href="#top" aria-label="Monohaus home">MONO<span>HAUS</span><sup>®</sup></a>
-    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Open navigation"><span></span><span></span></button>
-    <nav id="navLinks" class="nav-links">
-      <a href="#work">WORK <sup>03</sup></a>
-      <a href="#about">STUDIO</a>
-      <a href="#services">SERVICES</a>
-      <a href="#contact" class="nav-contact">LET’S TALK <span>↗</span></a>
-    </nav>
-  </header>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="NovaFolio home"><span class="brand-mark">N</span><span>nova<span class="brand-accent">folio</span></span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+      <nav class="nav" id="mainNav" aria-label="Main navigation">
+        <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark theme" title="Toggle theme">☼</button>
+      </nav>
+    </header>
 
-  <main id="top">
-    <section class="hero">
-      <div class="hero-topline"><span>PORTFOLIO / 2026</span><span>DESIGN · DIGITAL · DIRECTION</span></div>
-      <h1>MAKING<br><span class="outline">GOOD</span> THINGS<br>MATTER<span class="asterisk">✳</span></h1>
-      <div class="hero-bottom">
-        <p class="hero-statement">I’m <strong>Your Name</strong> — an independent creative building distinctive digital experiences, identities, and ideas for people with something to say.</p>
-        <a href="#work" class="round-link" aria-label="Explore selected work"><span>SCROLL<br>TO EXPLORE</span><b>↓</b></a>
-        <div class="hero-stamp"><span>THOUGHTFUL<br>BY DESIGN</span><strong>MH.</strong></div>
-      </div>
-      <div class="hero-rule"></div>
-    </section>
+    <main>
+      <section class="hero section" id="home">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="status-dot"></span> OPEN TO CREATIVE OPPORTUNITIES</p>
+          <h1>Turning ideas into<br><span class="gradient-text">digital experiences.</span></h1>
+          <p class="hero-description">Hey, I’m <strong>Your Name</strong> — a creative developer who builds clean, thoughtful, and useful experiences for the web.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↗</span></a>
+            <a class="button button-secondary" href="#contact">Let’s talk</a>
+          </div>
+          <div class="hero-meta"><div class="avatar-stack"><span>✦</span><span>✳</span><span>◈</span></div><span>Design-minded · Detail-focused · Always learning</span></div>
+        </div>
+        <div class="hero-art reveal" aria-label="Abstract portfolio illustration">
+          <div class="orb orb-one"></div><div class="orb orb-two"></div>
+          <div class="art-grid"></div>
+          <div class="floating-card card-code"><div class="card-top"><span></span><span></span><span></span><b>index.html</b></div><pre><code><i>&lt;section</i> class=<em>"future"</em><i>&gt;</i>
+  <strong>Build something</strong>
+  <strong>meaningful.</strong>
+<i>&lt;/section&gt;</i></code></pre></div>
+          <div class="floating-card card-stat"><span class="stat-icon">✦</span><div><strong>100%</strong><small>Curiosity level</small></div></div>
+          <div class="floating-card card-badge"><span class="badge-spark">✳</span><span>Made with<br><b>intention</b></span></div>
+          <div class="art-caption">CREATIVE THINKING / DIGITAL CRAFT</div>
+        </div>
+        <a class="scroll-cue" href="#about"><span></span> Scroll to discover</a>
+      </section>
 
-    <section class="intro-strip" id="about">
-      <span class="section-index">(01) / THE PERSON</span>
-      <p>NOT HERE TO MAKE MORE NOISE.<br><em>HERE TO MAKE BETTER SIGNAL.</em></p>
-      <div class="intro-description">Curiosity-led creative work for brands, people, and projects that want to stand for something. Strategy first. Good taste always.</div>
-    </section>
+      <section class="section about-section" id="about">
+        <div class="section-heading reveal"><p class="eyebrow">01 / A LITTLE ABOUT ME</p><h2>Curious by nature.<br><span class="muted-heading">Builder by choice.</span></h2></div>
+        <div class="about-grid">
+          <div class="about-note reveal"><span class="quote-mark">“</span><p>I believe great digital work lives at the intersection of <em>clear thinking, useful design,</em> and a little bit of boldness.</p></div>
+          <div class="about-copy reveal"><p>I enjoy taking ideas from a rough sketch to a polished, responsive website. My approach is simple: keep the experience intuitive, make the details count, and build things that feel good to use.</p><p>This portfolio is a starting point. Replace this text with your own story, experience, goals, and the kind of work you want to attract.</p><div class="quick-facts"><div><strong>01</strong><span>Thoughtful design</span></div><div><strong>02</strong><span>Responsive layouts</span></div><div><strong>03</strong><span>Continuous growth</span></div></div></div>
+        </div>
+      </section>
 
-    <section class="work-section" id="work">
-      <div class="section-head"><div><span class="section-index">(02) / SELECTED WORK</span><h2>THE GOOD<br>STUFF<span>—</span></h2></div><p>Three self-initiated concept projects.<br>Replace these with your own work.</p></div>
-      <div class="work-grid">
-        <article class="work-card work-wide">
-          <a class="work-image image-brand" href="#contact" aria-label="Discuss the Forma identity project">
-            <div class="brand-art-top"><span>FORMA / OBJECTS FOR LIVING</span><span>IDENTITY 001</span></div>
-            <div class="forma-word">fo<span>r</span>ma.</div>
-            <div class="forma-shapes"><i></i><i></i><i></i></div>
-            <div class="brand-art-bottom"><span>LESS, BUT BETTER.</span><span>2026 ↗</span></div>
-          </a>
-          <div class="work-caption"><div><span>01 — BRAND IDENTITY</span><h3>Forma Objects</h3></div><a href="#contact" aria-label="Contact about Forma">↗</a></div>
-        </article>
-        <article class="work-card">
-          <a class="work-image image-editorial" href="#contact" aria-label="Discuss the Off Hours editorial project">
-            <div class="editorial-top">OFF HOURS <span>ISSUE Nº 04</span></div>
-            <div class="editorial-title">TAKE<br>YOUR<br><i>TIME.</i></div>
-            <div class="editorial-sun"></div><div class="editorial-foot">A FIELD GUIDE TO SLOWER DAYS</div>
-          </a>
-          <div class="work-caption"><div><span>02 — ART DIRECTION</span><h3>Off Hours Journal</h3></div><a href="#contact" aria-label="Contact about Off Hours">↗</a></div>
-        </article>
-        <article class="work-card">
-          <a class="work-image image-digital" href="#contact" aria-label="Discuss the Northstar digital project">
-            <div class="north-ui"><div class="north-nav">NORTHSTAR <span>MENU ☰</span></div><div class="north-circle">N.</div><div class="north-title">FIND YOUR<br>NEXT NORTH.</div><div class="north-button">START YOUR JOURNEY ↗</div></div>
-            <div class="digital-label">DIGITAL PRODUCT / CONCEPT</div>
-          </a>
-          <div class="work-caption"><div><span>03 — DIGITAL EXPERIENCE</span><h3>Northstar Studio</h3></div><a href="#contact" aria-label="Contact about Northstar">↗</a></div>
-        </article>
-      </div>
-    </section>
+      <section class="section skills-section" id="skills">
+        <div class="section-heading reveal"><p class="eyebrow">02 / MY TOOLKIT</p><h2>Skills that bring<br><span class="muted-heading">ideas to life.</span></h2><p class="section-intro">A flexible toolkit for creating fast, accessible, and engaging web experiences.</p></div>
+        <div class="skills-grid">
+          <article class="skill-card reveal"><div class="skill-icon">⌘</div><h3>Frontend</h3><p>Building responsive interfaces with clean, maintainable code.</p><div class="tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div></article>
+          <article class="skill-card reveal"><div class="skill-icon">✳</div><h3>Design</h3><p>Creating clear layouts, balanced typography, and visual systems.</p><div class="tags"><span>UI Design</span><span>Figma</span><span>Prototyping</span></div></article>
+          <article class="skill-card reveal"><div class="skill-icon">↗</div><h3>Workflow</h3><p>Taking projects from a first idea to a polished live website.</p><div class="tags"><span>Git</span><span>GitHub Pages</span><span>SEO Basics</span></div></article>
+        </div>
+      </section>
 
-    <section class="services-section" id="services">
-      <div class="services-heading"><span class="section-index">(03) / WHAT I DO</span><h2>SMALL TEAM<br>ENERGY. <span>BIG</span><br>PICTURE THINKING.</h2></div>
-      <div class="service-list">
-        <div class="service-row"><span>01</span><h3>Brand identity</h3><p>Names, visual systems, and a clear point of view.</p><b>↗</b></div>
-        <div class="service-row"><span>02</span><h3>Web design</h3><p>Distinctive, responsive sites made for real people.</p><b>↗</b></div>
-        <div class="service-row"><span>03</span><h3>Creative direction</h3><p>Connecting the dots between story, image, and feeling.</p><b>↗</b></div>
-        <div class="service-row"><span>04</span><h3>Digital experiments</h3><p>New formats, prototypes, and ideas worth testing.</p><b>↗</b></div>
-      </div>
-    </section>
+      <section class="section projects-section" id="projects">
+        <div class="section-heading section-heading-row reveal"><div><p class="eyebrow">03 / SELECTED WORK</p><h2>Projects with<br><span class="muted-heading">purpose.</span></h2></div><span class="project-count">03 SELECTED PROJECTS</span></div>
+        <div class="projects-grid">
+          <article class="project-card project-large reveal"><div class="project-visual visual-one"><div class="browser-bar"><i></i><i></i><i></i><span>focusflow.app</span></div><div class="mock-dashboard"><aside><b>focusflow</b><span>Overview</span><span>My tasks</span><span>Insights</span></aside><div class="mock-main"><small>MONDAY, 09:41 AM</small><h4>Make room for<br>what matters.</h4><div class="mock-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="mock-widget"></div></div></div></div><div class="project-info"><div><p class="project-type">PRODUCTIVITY / UI CONCEPT</p><h3>FocusFlow Dashboard</h3><p>A calm, focused workspace concept for planning daily tasks.</p></div><a class="project-link" href="#contact" aria-label="Ask about FocusFlow project">↗</a></div><div class="tags"><span>UI Design</span><span>Dashboard</span><span>Responsive</span></div></article>
+          <article class="project-card reveal"><div class="project-visual visual-two"><div class="phone-mock"><div class="phone-notch"></div><span class="phone-kicker">YOUR DAILY RESET</span><h4>Small steps.<br><em>Big changes.</em></h4><div class="phone-circle">72%</div><div class="phone-lines"><i></i><i></i><i></i></div></div><span class="visual-label">WELLNESS APP</span></div><div class="project-info"><div><p class="project-type">MOBILE / WELLNESS</p><h3>Daily Ritual</h3><p>A simple habit-tracking experience designed to feel encouraging.</p></div><a class="project-link" href="#contact" aria-label="Ask about Daily Ritual project">↗</a></div><div class="tags"><span>Mobile UI</span><span>Prototyping</span></div></article>
+          <article class="project-card reveal"><div class="project-visual visual-three"><div class="shop-window"><div class="shop-nav">OBJECTS / STUDIO <span>MENU +</span></div><div class="shop-sun"></div><div class="shop-product"><div class="vase vase-one"></div><div class="vase vase-two"></div><div class="vase vase-three"></div></div><div class="shop-title">Made for<br>slow living.</div></div></div><div class="project-info"><div><p class="project-type">E-COMMERCE / CONCEPT</p><h3>Objects Studio</h3><p>A warm editorial storefront concept for modern handmade goods.</p></div><a class="project-link" href="#contact" aria-label="Ask about Objects Studio project">↗</a></div><div class="tags"><span>E-commerce</span><span>Art Direction</span></div></article>
+        </div>
+        <p class="projects-note">These are sample project concepts. Replace them with your real work, screenshots, and project links.</p>
+      </section>
 
-    <section class="about-band">
-      <div class="about-big">GOOD WORK<br>STARTS WITH<br><span>GOOD QUESTIONS.</span></div>
-      <div class="about-small"><span class="section-index">(04) / THE APPROACH</span><p>No copy-paste formulas. No decoration for decoration’s sake. Just a considered process, open collaboration, and an obsession with the details people feel even when they can’t explain them.</p><div class="signature">Your Name <span>— CREATIVE / MAKER</span></div></div>
-    </section>
+      <section class="section process-section">
+        <div class="section-heading reveal"><p class="eyebrow">04 / HOW I WORK</p><h2>Good work comes<br><span class="muted-heading">from a good process.</span></h2></div>
+        <div class="process-list"><div class="process-item reveal"><span>01</span><div><h3>Discover</h3><p>Understand the goal, audience, and problem before choosing a solution.</p></div><span class="process-symbol">⌕</span></div><div class="process-item reveal"><span>02</span><div><h3>Design & build</h3><p>Shape the structure, refine the visual language, and make it work across screens.</p></div><span class="process-symbol">⌘</span></div><div class="process-item reveal"><span>03</span><div><h3>Polish & launch</h3><p>Test the details, improve accessibility, and prepare the project for launch.</p></div><span class="process-symbol">↗</span></div></div>
+      </section>
 
-    <section class="contact-section" id="contact">
-      <span class="section-index">(05) / HAVE A GOOD ONE IN MIND?</span>
-      <h2>LET’S MAKE<br><span>IT COUNT.</span></h2>
-      <p>Have a project, a question, or a wildly unfinished idea? My inbox is open.</p>
-      <a class="contact-link" id="emailLink" href="mailto:hello@example.com?subject=Let%27s%20work%20together">HELLO@EXAMPLE.COM <span>↗</span></a>
-      <div class="contact-foot"><span>GOOD PEOPLE. GOOD PROJECTS.</span><span>INDEPENDENT BY NATURE.</span><span>© <b id="year"></b> MONOHAUS</span></div>
-    </section>
-  </main>
-  <footer class="footer"><a class="wordmark" href="#top">MONO<span>HAUS</span><sup>®</sup></a><a href="#top">BACK TO THE TOP ↑</a><span>BUILT WITH INTENTION.</span></footer>
+      <section class="contact-section section" id="contact">
+        <div class="contact-panel reveal"><div class="contact-glow"></div><p class="eyebrow">05 / YOUR TURN</p><h2>Have an idea?<br><span class="gradient-text">Let’s make it real.</span></h2><p class="contact-intro">Have a project, collaboration, or just want to say hello? Send a message — I’d love to hear from you.</p><a class="button button-light" id="emailButton" href="mailto:hello@example.com?subject=Portfolio%20inquiry">Say hello <span>↗</span></a><p class="email-hint">Replace <strong>hello@example.com</strong> with your real email address.</p><div class="contact-orbit orbit-a"></div><div class="contact-orbit orbit-b"></div></div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><a class="brand footer-brand" href="#home"><span class="brand-mark">N</span><span>nova<span class="brand-accent">folio</span></span></a><span>Designed with intention. Built for the web.</span><a href="#home" class="back-top">BACK TO TOP ↑</a><small>© <span id="year"></span> NovaFolio. Personalize it and make it yours.</small></footer>
+  </div>
 </body>
 </html>

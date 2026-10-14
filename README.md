@@ -1,41 +1,50 @@
-# Monohaus — Editorial Creative Portfolio
+# NovaFolio — Personal Portfolio
 
-A second portfolio concept with a deliberately different visual direction from NovaFolio: warm paper background, bold editorial typography, orange accents, mono labels, asymmetrical layouts, and graphic project mockups.
+A responsive, modern portfolio website built with plain HTML, CSS, and JavaScript. It is designed to deploy easily on **GitHub Pages** without a build step or backend.
 
 ## Files
 
-- `index.html` — page content and sections
-- `style.css` — editorial layout, responsive styling, colors, and typography
-- `script.js` — mobile navigation and dynamic copyright year
-- `README.md` — setup and GitHub Pages instructions
+- `index.html` — page structure and portfolio content
+- `style.css` — visual design, responsive layouts, animations, and light-theme variables
+- `script.js` — mobile navigation, theme switch, reveal-on-scroll, and automatic footer year
+- `README.md` — setup and publishing guide
 
-## Personalize before publishing
+## Before you publish
 
-1. Replace `Your Name` with your name in the hero and signature.
-2. Replace `hello@example.com` in the contact link and displayed email with your real email.
-3. Replace the three sample concept projects with your own projects and real links.
-4. Edit the About and Services sections to match your skills.
-5. Save and preview on desktop and mobile.
+1. Open `index.html`.
+2. Replace **Your Name** with your name.
+3. Replace `hello@example.com` in the contact link and hint with your real email address.
+4. Replace the sample project concepts with your own projects, screenshots, descriptions, and URLs.
+5. Update the About section and skills to match your actual experience.
+6. Save all files.
 
-The project cards currently use custom CSS artwork, not screenshots of real projects. The email button opens the visitor's email application; it does not store or send messages through a website backend.
+> The contact button opens the visitor's email application using a `mailto:` link. It does not submit messages to a database. A working contact form that sends messages requires a backend or a form service.
 
 ## Run locally
 
-Open `index.html` in a browser, or use VS Code Live Server.
+Open `index.html` in your browser. For local development, you can also use the VS Code **Live Server** extension.
 
-## Deploy to GitHub Pages
+## Publish with GitHub Pages
 
-1. Create a repository on [GitHub](https://github.com/).
-2. Upload all four files to the repository root.
-3. Open **Settings → Pages**.
-4. Select **Deploy from a branch**, choose `main` and `/ (root)`, then save.
-5. Wait for the published URL to appear in Pages settings.
+1. Sign in to [GitHub](https://github.com/).
+2. Create a new repository. For a personal homepage, name it `YOUR-USERNAME.github.io`. Alternatively, use any repository name for a project site.
+3. Upload `index.html`, `style.css`, `script.js`, and `README.md` to the repository's root folder.
+4. Open the repository's **Settings → Pages**.
+5. Under **Build and deployment**, choose **Deploy from a branch**.
+6. Choose the `main` branch and `/ (root)` folder, then click **Save**.
+7. Wait for GitHub Pages to publish the site. The live URL will appear in the Pages settings.
 
-For a project repository, the URL usually looks like `https://YOUR-USERNAME.github.io/REPOSITORY-NAME/`.
+For a user/organization site, the address is usually `https://YOUR-USERNAME.github.io/`. For a project site, it is usually `https://YOUR-USERNAME.github.io/REPOSITORY-NAME/`.
 
-## Customize
+## Customization
 
-- Colors: CSS variables at the top of `style.css`.
-- Text and project content: `index.html`.
-- Mobile menu behavior: `script.js`.
-- Typography uses Archivo Black, Manrope, and DM Mono from Google Fonts with fallback fonts.
+- **Colors:** edit the CSS variables at the top of `style.css` inside `:root`.
+- **Text and sections:** edit `index.html`.
+- **Interactions:** edit `script.js`.
+- **Fonts:** the page loads DM Sans and Space Grotesk from Google Fonts; system fallbacks are included.
+
+## Notes
+
+- No framework, package manager, or build command is required.
+- The website is responsive for desktop, tablet, and mobile.
+- Test all links and proofread your content before sharing your live portfolio.
